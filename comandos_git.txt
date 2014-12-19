@@ -1,0 +1,65 @@
+configurar git
+git config --global user.name "Edson Rodrigues"
+git config --global user.email "edsonrodsilva@gmail.com"
+git config --global color.ui true
+
+git init 	(inicializa um repositorio git)
+git status  (lista o status dos arquivos)
+
+#Adicionando arquivos novos ou modificados no Stage:
+git add arquivo.txt
+git add *.py
+git add . (para add todos os arquivos)
+git add -i (para modo interativo. 1-5 ou 1,2,3,4 e -3 para retirar)
+
+#Fazendo commit
+git commit -m "comentario"	-> envia os arquivos do Index para o Head
+git commit -a -m "comentario" (adiciona e faz commit ao mesmo tempo)
+
+#Verificando log
+git log (Mostra o log de commits)
+git log -p (mostra o log com detalhes (mostra as alteracoes nos arquivos)
+git log -p -2 (mostra os dois ultimos commits)
+git log --stat (Mostra o que foi modificado em cada commit)
+git log --graph (Mostra gráfico do log)
+git log --pretty=oneline (Mostra os commits linha por linha)
+git log --pretty=format:"%an %ad %h %s" (Exibe o autor, data, sha1 abreviado e texto do commit)
+git log --since=30.minutes ou 1.hour ou 2.hours (Exibe commits dos últimos 30 minutos, 1h ou 2h)
+git log --since=10.hours --until=2.hours (Exibe commits entre as últimas 10h e últimas 2h)
+git log --since=1.weeks     (mostra os commits da ultima semana)
+git log --before="2010-12-25" (Exibe commits antes do dia 25/12/2010)
+git reflog (Mostra commits apagados pelo git reset)
+
+
+#Voltar arquivos comitados
+git reset HEAD <arquivo> 	 (volta o arquivo o Stage)
+git reset HEAD~1 --soft 	 (volta ao último commit e mantém os últimos arquivos no Stage)
+git reset HEAD~1 --hard 	 (volta ao último commit)
+git reset --hard XXXXXXXXXXX (Volta para o commit com a hash XXXXXXXXXXX)
+
+#Voltar a versao
+git checkout <num_heach>	(volta a versao para um commit especificado)
+git checkout -- exemplo.php (volta o conteúdo do arquivo ao estado original do ultimo commit)
+
+#Branches (galhos ou ramificacao)
+git branch (Lista os branches)
+git branch -a (Mostra também os branches do repositório remoto)
+git branch -d novobranch (Apaga o branch)
+git branch -D novobranch (Força a remoção do branch)
+git checkout -b novobranch (Cria um branch contendo os mesmos commits do branch de origem)
+git checkout -b novobranch origin/outrobranch (Cria novobranch a partir do outrobranch no repositório remoto)
+git checkout -b [branch, tag, sha1]
+git checkout -b <branch> v1.0 (Cria um branch a partir da tag v1.0)
+git checkout master (Retorna ao branch master)
+git rebase master (Atualiza um branch com o que há de novo no master)
+git merge novobranch (Faz um merge do que foi feito em novobranch)
+git merge novobranch --squash (Permite definir uma nova mensagem em vez das mensagens de todos os commits do novobranch)
+
+
+
+
+
+
+
+
+
