@@ -24,7 +24,6 @@ git commit -m ""comentario bem especifico do commit"
 git remote add origin https://github.com/edsonrodsilva/cusro-git.git
 
 8-fazer o push --- envio os arquivos para o servidor remoto
-
 git push -u origin master
 
 ##########################################
