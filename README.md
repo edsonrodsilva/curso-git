@@ -27,7 +27,6 @@ git remote add origin https://github.com/edsonrodsilva/cusro-git.git
 git push -u origin master
 
 
-
 ##########################################
 Este é uma treinamento dos comandos de git
 Aqui eu simulei um push de um pequeno site.
