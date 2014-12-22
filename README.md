@@ -1,1 +1,2 @@
-Curso de Git
+Este é uma treinamento dos comandos de git
+Aqui eu simulei um push de um pequeno site.
