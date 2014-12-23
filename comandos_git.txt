@@ -55,6 +55,13 @@ git rebase master (Atualiza um branch com o que há de novo no master)
 git merge novobranch (Faz um merge do que foi feito em novobranch)
 git merge novobranch --squash (Permite definir uma nova mensagem em vez das mensagens de todos os commits do novobranch)
 
+#tags
+git tag 0.1.0 (cria uma tag)
+git tag -l (lista todas as tags)
+git push origin master --tags (sobe todas as tags para o repositorio remoto)
+git tag -d 0.1.0  (removendo tag localmente)
+git push origin :refs/tags/0.1.0 (removendo tag no repositório remoto)
+
 
 
 
