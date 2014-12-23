@@ -18,7 +18,7 @@ touch nome_arquivo
 git add .
 
 6-fazer o commit dos arquivos
-git commit -m ""comentario bem especifico do commit"
+git commit -m "comentario bem especifico do commit"
 
 7-adicionando o repositorio remoto
 git remote add origin https://github.com/edsonrodsilva/cusro-git.git
