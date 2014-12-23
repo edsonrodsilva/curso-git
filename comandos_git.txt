@@ -1,15 +1,15 @@
-configurar git
-git config --global user.name "Edson Rodrigues"
-git config --global user.email "edsonrodsilva@gmail.com"
-git config --global color.ui true
+#configurar git
+git config --global user.name "Seu Nome"
+git config --global user.email "Seu Email"
+git config --global color.ui true //Seta git para mostrar mensagem coloridas
 
 git init 	(inicializa um repositorio git)
 git status  (lista o status dos arquivos)
 
 #Adicionando arquivos novos ou modificados no Stage:
-git add arquivo.txt
-git add *.py
-git add . (para add todos os arquivos)
+git add arquivo.txt //Adiciona o arquivo expecificado no stage
+git add *.py //Adiciona todos os arquivos co a extensao py no stage
+git add . (para add todos os arquivos) //Adiciona todos os arquivos ao stage
 git add -i (para modo interativo. 1-5 ou 1,2,3,4 e -3 para retirar)
 
 #Fazendo commit
