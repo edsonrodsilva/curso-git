@@ -168,6 +168,7 @@ Tags
 Uma tag é utilizada para criar uma versão de lançamento.
 
 git tag v1.0 (Cria a tag v1.0)
+git tag -a v1.0.0 -m "Versão 1.0.0 do projeto" -- Cria a tag v1.0.0 com um comentário
 git push origin v1.0 (Envia a tag v1.0)
 git push --tags (Envia todas as tags)
 git checkout -b <branch> v1.0 (Cria um branch a partir da tag v1.0)
